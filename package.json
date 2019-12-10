@@ -1,0 +1,10 @@
+{
+  "name": "suicide-animate",
+  "version": "0.0.1",
+  "type": "module",
+  "source": "suicideAnimate.js",
+  "main": "suicideAnimate.js",
+  "module": "suicideAnimate.js",
+  "repository": "https://github.com/realdennis/suicideAnimate.git",
+  "license": "MIT"
+}
