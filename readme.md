@@ -26,30 +26,24 @@ const animationObj = suicideAnimate(document.getElementById("tunnel").animate(
   }
 ));
 
-animationObj.onpause = function(){
-    console.log("you can also do something you want like standard usage;");
-}
 animationObj.onfinish = function(){
     console.log("you can also do something you want like standard usage;");
 }
 ```
 
 
-## Before suicide animate
+## Multiple element usage
 
+In this case, you will not need to register event & remove the element again and again.
 ```javascript
-const animationObj = document.getElementById("tunnel").animate(
-  [
-    // keyframes
-    { transform: "translateY(0px)" },
-    { transform: "translateY(-300px)" }
-  ],
-  {
-    // timing options
-    duration: 1000,
-  }
+[el1, el2, el3, el4].forEach(el =>
+  suicideAnimate(
+    el.animate(
+      [{ transform: "translateY(0px)" }, { transform: "translateY(-300px)" }],
+      {
+        duration: 1000
+      }
+    )
+  )
 );
-animationObj.onfinish = function() {
-  document.getElementById("tunnel").remove();
-};
 ```
