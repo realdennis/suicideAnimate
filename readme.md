@@ -13,7 +13,7 @@ If you control only one or two element's animate method, you will not need this,
 It also return `animation object`, the only one thing special is it'll remove when animation state `finish`.
 
 ```javascript
-import suicideAnimate from './suicide-animate.js'
+import suicideAnimate from 'https://unpkg.com/suicide-animate/suicideAnimate.js'
 const animationObj = suicideAnimate(document.getElementById("tunnel").animate(
   [
     // keyframes
@@ -47,3 +47,12 @@ In this case, you will not need to register event & remove the element again and
   )
 );
 ```
+
+## Installation
+
+```sh
+$ yarn add suicide-animate
+```
+
+## License
+MIT © 2019 realdennis
