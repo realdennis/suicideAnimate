@@ -8,6 +8,13 @@ Once the animate finish, element will killed by itself.
 
 If you control only one or two element's animate method, you will not need this, but if you try to **dynamic generate element and do some animate and destroy it**, you must need this to save time to store the dynamic element variable and event.
 
+## Polyfill
+It use `Element.animate` and `effect.target` in animation api, so if you want to support more browser, please run the [`web-animation next` polyfill](https://github.com/web-animations/web-animations-js) first.
+
+```html
+<script src="https://rawgit.com/web-animations/web-animations-js/master/web-animations-next-lite.min.js"></script>
+```
+
 ## Usage
 
 It also return `animation object`, the only one thing special is it'll remove when animation state `finish`.
