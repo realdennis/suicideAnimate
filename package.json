@@ -2,9 +2,20 @@
   "name": "suicide-animate",
   "version": "0.0.2",
   "type": "module",
-  "source": "suicideAnimate.js",
-  "main": "suicideAnimate.js",
-  "module": "suicideAnimate.js",
+  "types": "./dist/index.d.ts",
+  "source": "./src/index.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/realdennis/suicideAnimate.git",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
 }

@@ -1,0 +1,28 @@
+// 20191223214122
+// https://raw.githubusercontent.com/realdennis/emoji-claps/master/tsconfig.json
+
+{
+    "compilerOptions": {
+      "outDir": "./dist",
+      "target": "es5",
+      "module": "es2015",
+      "moduleResolution": "node",
+      "lib": [
+        "es2017",
+        "dom"
+      ],
+      "declaration": true,
+      "strictNullChecks": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "removeComments":true
+    },
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  }

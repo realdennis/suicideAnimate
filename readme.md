@@ -20,7 +20,7 @@ It use `Element.animate` and `effect.target` in animation api, so if you want to
 It also return `animation object`, the only one thing special is it'll remove when animation state `finish`.
 
 ```javascript
-import suicideAnimate from 'https://unpkg.com/suicide-animate/suicideAnimate.js'
+import suicideAnimate from 'https://unpkg.com/suicide-animate/dist/index.js'
 const animationObj = suicideAnimate(document.getElementById("tunnel").animate(
   [
     // keyframes
